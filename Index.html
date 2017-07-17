@@ -5,8 +5,21 @@
 <head>
     <!--not shown on website; "what's in my head"-->
     <title>Hello World</title> <!--shows up as link in Google search results; helps with SEO ranking-->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet"> <!--got from Google Fonts-->
     <meta charset="utf-8" /> <!--includes all characters-->
     <link href="Style.css" rel="stylesheet" /> <!--referencing the style sheet-->
+    <style>
+        p{
+            font-size:15px;
+            text-align:center;
+        }
+        img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            padding:25px;
+        }
+    </style>
 </head>
 <body>
     <!--include what we want visible on website-->
@@ -18,19 +31,13 @@
 
     <p class="introText">It is a great place to be.</p>
 
-    <img src="http://az616578.vo.msecnd.net/files/2016/01/03/635874568579930676-159709500_Cleveland_Skyline.1.jpg" /> <!--image; src is source of image (where am I getting image from); src="" is the attribute-->
+    <!--<img src="http://az616578.vo.msecnd.net/files/2016/01/03/635874568579930676-159709500_Cleveland_Skyline.1.jpg" /> <!--image; src is source of image (where am I getting image from); src="" is the attribute-->
 
-    <!--<img src="Images/1200px-Cleveland_Browns_B.svg.png" alt="Cleveland Browns logo" title="Cleveland Browns" /> <!--alt helps SEO; always have alt for images; alt shows text that appears when image is broken; title is text that appears when you hover over image on website-->
+    <img src="Images/1200px-Cleveland_Browns_B.svg.png" alt="Cleveland Browns logo" title="Cleveland Browns" style="border-color:red;border-width:3px;border-style:solid" /> <!--alt helps SEO; always have alt for images; alt shows text that appears when image is broken; title is text that appears when you hover over image on website; in-line style-->
 
     <a href="http://www.google.com" target="_blank">Click Here</a> <!--"a" stands for anchor; href is reference for the text/file in solution or web link; target="_blank" makes viewer open link in new tab-->
 
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
-
-    <table style="width:100%">
+    <table>
         <tr>
             <th>Number of Bedrooms</th>
             <th>Cost Per Month</th>
