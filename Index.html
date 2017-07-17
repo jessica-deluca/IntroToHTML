@@ -1,62 +1,68 @@
-﻿<!DOCTYPE html> <!--expect that this document will be html-->
-<html> <!--this is a html tag-->
-<head> <!--not shown on website; "what's in my head"-->
+﻿<!DOCTYPE html>
+ <!--expect that this document will be html-->
+<html>
+ <!--this is a html tag-->
+<head>
+    <!--not shown on website; "what's in my head"-->
     <title>Hello World</title> <!--shows up as link in Google search results; helps with SEO ranking-->
-	<meta charset="utf-8" /> <!--includes all characters-->
+    <meta charset="utf-8" /> <!--includes all characters-->
+    <link href="Style.css" rel="stylesheet" /> <!--referencing the style sheet-->
 </head>
 <body>
     <!--include what we want visible on website-->
-    <h1>Welcome to Cleveland.</h1> <!--h1 is heading; help SEO; 6 heading sizes available in html, but you can have as many as you want-->
+    <h1 id="firstHeading">Welcome to Cleveland.</h1> <!--h1 is heading; help SEO; 6 heading sizes available in html, but you can have as many as you want-->
 
-    <h1>Why visit Cleveland?</h1>
+    <h1 class="introText">Why visit Cleveland?</h1>
 
     <br /> <!--break to add space; self-closing tag-->
 
-    <p>It is a great place to be.</p>
+    <p class="introText">It is a great place to be.</p>
 
     <img src="http://az616578.vo.msecnd.net/files/2016/01/03/635874568579930676-159709500_Cleveland_Skyline.1.jpg" /> <!--image; src is source of image (where am I getting image from); src="" is the attribute-->
 
-    <img src="Images/1200px-Cleveland_Browns_B.svg.png" alt="Cleveland Browns logo" title="Cleveland Browns" /> <!--alt helps SEO; always have alt for images; alt shows text that appears when image is broken; title is text that appears when you hover over image on website-->
+    <!--<img src="Images/1200px-Cleveland_Browns_B.svg.png" alt="Cleveland Browns logo" title="Cleveland Browns" /> <!--alt helps SEO; always have alt for images; alt shows text that appears when image is broken; title is text that appears when you hover over image on website-->
 
     <a href="http://www.google.com" target="_blank">Click Here</a> <!--"a" stands for anchor; href is reference for the text/file in solution or web link; target="_blank" makes viewer open link in new tab-->
 
     <style>
-    table, th, td {border: 1px solid black;}
+        table, th, td {
+            border: 1px solid black;
+        }
     </style>
 
-        <table style="width:100%">
-            <tr>
-                <th>Number of Bedrooms</th>
-                <th>Cost Per Month</th>
-                <th>Size</th>
-            </tr>
-            <tr>
-                <td>1 bedroom</td>
-                <td>$500</td>
-                <td>500 sq. ft.</td>
-            </tr>
-            <tr>
-                <td>2 bedroom</td>
-                <td>$1,200</td>
-                <td>1,000 sq. ft.</td>
-            </tr>
-        </table>
+    <table style="width:100%">
+        <tr>
+            <th>Number of Bedrooms</th>
+            <th>Cost Per Month</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <td>1 bedroom</td>
+            <td>$500</td>
+            <td>500 sq. ft.</td>
+        </tr>
+        <tr>
+            <td>2 bedroom</td>
+            <td>$1,200</td>
+            <td>1,000 sq. ft.</td>
+        </tr>
+    </table>
 
-            <h3>Cleveland Sports Teams</h3>
+    <h3>Cleveland Sports Teams</h3>
 
-            <ul style="list-style-type:square">
-                <li>Browns</li>
-                <li>Indians</li>
-                <li>Cavs</li>
-            </ul>
+    <ul style="list-style-type:square">
+        <li>Browns</li>
+        <li>Indians</li>
+        <li>Cavs</li>
+    </ul>
 
-            <h2>Ordered List with Numbers</h2>
+    <h2>Ordered List with Numbers</h2>
 
-            <ol type="1">
-                <li>Tremont</li>
-                <li>Ohio City</li>
-                <li>Flats - East Bank</li>
-            </ol>
+    <ol type="1">
+        <li>Tremont</li>
+        <li>Ohio City</li>
+        <li>Flats - East Bank</li>
+    </ol>
 
-    </body>
+</body>
 </html> <!--this is a closing tag, shown by /-->
