@@ -1,11 +1,42 @@
 ﻿#firstHeading {
-    color:blue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*color:blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    text-align:center;
 }
-body {
+
+.threeCols {
+    column-count:3;
+    column-gap:15px;
+}
+
+.twoCols {
+    column-count:2;
+    column-gap:15px;
+}
+
+#fullWidthP {
+    column-span:all;
+}
+
+div p {
+    column-span:none; /*use "none" when you want it to span 1 column*/
+}
+
+p {
+    text-align:justify;
+}
+
+.stubbornP {
+    margin-top:0px;
+}
+
+
+
+
+/*body {
     background-color:#20F9FF;
 }
 .introText {
     color:white;
-    font-family: 'Bellefair', serif;
+    font-family: 'Bellefair', serif;*/
 }
